@@ -27,13 +27,42 @@
         android:focusable="false"
         android:focusableInTouchMode="false"/>
 
-    <EditText
-        android:id="@+id/etmed"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_margin="5dp"
-        android:hint="Medication name" />
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="+@id/radio_donzepil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donzepil"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="+@id/radio_lisinopril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lisinopril"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="+@id/radio_amytriptyline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amytriptyline"
+            android:onClick="onRadioButtonClicked"/>
+        
+    </RadioGroup>
+
+
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/etmed"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:hint="Medication name" />-->
 
     <EditText
         android:id="@+id/etquantity"
